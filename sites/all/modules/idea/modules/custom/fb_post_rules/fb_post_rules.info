@@ -1,0 +1,14 @@
+name = Post to Facebook wall
+description = "Rules module integration - posting nodes to Facebook."
+core = 7.x
+dependencies[] = rules
+dependencies[] = fbconnect
+
+package = openideaL
+
+; Information added by Drupal.org packaging script on 2017-11-27
+version = "7.x-4.4"
+core = "7.x"
+project = "idea"
+datestamp = "1511777364"
+

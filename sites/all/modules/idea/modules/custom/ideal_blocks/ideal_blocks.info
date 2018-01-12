@@ -1,0 +1,16 @@
+name = Ideal Blocks
+description = Adds various blocks
+core = 7.x
+php = 5.3
+package = openideaL
+
+dependencies[] = entity
+dependencies[] = votingapi
+dependencies[] = statistics
+
+; Information added by Drupal.org packaging script on 2017-11-27
+version = "7.x-4.4"
+core = "7.x"
+project = "idea"
+datestamp = "1511777364"
+
