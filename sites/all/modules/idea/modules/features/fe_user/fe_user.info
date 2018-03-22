@@ -2,7 +2,7 @@ name = fe_user
 description = Add the ideal user's feature
 core = 7.x
 package = OpenideaL
-version = 7.x-4.0
+version = 7.x-4.4
 project = idea
 dependencies[] = comment
 dependencies[] = context
@@ -23,6 +23,7 @@ dependencies[] = userpoints_rules
 dependencies[] = views
 dependencies[] = voting_rules
 dependencies[] = watcher
+datestamp = 1511777364
 features[context][] = user_page
 features[ctools][] = context:context:3
 features[ctools][] = quicktabs:quicktabs:1
@@ -50,10 +51,3 @@ features[views_view][] = most_active_users
 features[views_view][] = my_commented_ideas
 features[views_view][] = my_voted_ideas
 features[views_view][] = user_ideas
-
-; Information added by Drupal.org packaging script on 2017-11-27
-version = "7.x-4.4"
-core = "7.x"
-project = "idea"
-datestamp = "1511777364"
-

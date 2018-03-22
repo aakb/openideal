@@ -2,7 +2,7 @@ name = fe_pages
 description = Panel pages
 core = 7.x
 package = OpenideaL
-version = 7.x-2.8
+version = 7.x-4.4
 project = idea
 dependencies[] = ctools
 dependencies[] = fe_challenge
@@ -17,7 +17,7 @@ dependencies[] = panels_mini
 dependencies[] = search
 dependencies[] = views
 dependencies[] = views_bootstrap
-datestamp = 1507038364
+datestamp = 1511777364
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = panels:layouts:1
 features[ctools][] = panels_mini:panels_default:1
@@ -49,10 +49,3 @@ features[views_view][] = community
 features[views_view][] = default_challenge
 features[views_view][] = head_to_head_ideas
 features[views_view][] = highlighted_content
-
-; Information added by Drupal.org packaging script on 2017-11-27
-version = "7.x-4.4"
-core = "7.x"
-project = "idea"
-datestamp = "1511777364"
-

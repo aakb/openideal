@@ -15,6 +15,7 @@ function fe_challenge_user_default_permissions() {
     'name' => 'create challenge content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
       'site-manager' => 'site-manager',
     ),
     'module' => 'node',
@@ -55,6 +56,7 @@ function fe_challenge_user_default_permissions() {
     'name' => 'edit own challenge content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
       'site-manager' => 'site-manager',
     ),
     'module' => 'node',

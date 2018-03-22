@@ -34,6 +34,7 @@ function fe_idea_user_default_permissions() {
     'name' => 'create field_in_action',
     'roles' => array(
       'administrator' => 'administrator',
+      'site-manager' => 'site-manager',
     ),
     'module' => 'field_permissions',
   );
@@ -101,6 +102,7 @@ function fe_idea_user_default_permissions() {
     'name' => 'edit field_in_action',
     'roles' => array(
       'administrator' => 'administrator',
+      'site-manager' => 'site-manager',
     ),
     'module' => 'field_permissions',
   );
@@ -128,6 +130,7 @@ function fe_idea_user_default_permissions() {
     'name' => 'edit own field_in_action',
     'roles' => array(
       'administrator' => 'administrator',
+      'site-manager' => 'site-manager',
     ),
     'module' => 'field_permissions',
   );
@@ -176,7 +179,6 @@ function fe_idea_user_default_permissions() {
     'name' => 'view field_in_action',
     'roles' => array(
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'field_permissions',
@@ -205,6 +207,7 @@ function fe_idea_user_default_permissions() {
     'name' => 'view own field_in_action',
     'roles' => array(
       'administrator' => 'administrator',
+      'site-manager' => 'site-manager',
     ),
     'module' => 'field_permissions',
   );
@@ -223,7 +226,6 @@ function fe_idea_user_default_permissions() {
     'name' => 'view post access counter',
     'roles' => array(
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'statistics',
