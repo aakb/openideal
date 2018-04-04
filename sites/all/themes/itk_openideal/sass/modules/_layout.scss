@@ -1,0 +1,47 @@
+/**
+* Define layout.
+*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0 !important;
+  min-width: 0;
+  width: 100%;
+
+  header#navbar {
+    .panel-pane {
+      height: 55px;
+    }
+
+    .nav li a {
+      height: 55px;
+      line-height: 25px;
+    }
+
+    .pane-search-form {
+      padding: 5px 0 0 15px;
+    }
+  }
+
+  .main-container.container {
+    flex: 1 1 auto;
+  }
+
+  footer {
+    flex: 1 1 auto;
+  }
+
+  .panels-bootstrap-inner_page .pane-node-field-in-action {
+    float: right;
+    margin-top: -52px;
+    margin-right: 100px;
+    font-size: 13px;
+
+    .field-item:before {
+      font-family: "OpenIdeal";
+      content: "\e604";
+      margin-right: 7px;
+    }
+  }
+}

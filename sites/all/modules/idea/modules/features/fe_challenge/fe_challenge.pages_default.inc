@@ -20,6 +20,16 @@ function fe_challenge_default_page_manager_pages() {
     'logic' => 'and',
     'type' => 'none',
     'settings' => NULL,
+    'plugins' => array(
+      0 => array(
+        'name' => 'perm',
+        'settings' => array(
+          'perm' => 'access content',
+        ),
+        'context' => 'logged-in-user',
+        'not' => FALSE,
+      ),
+    ),
   );
   $page->menu = array(
     'type' => 'normal',
@@ -61,7 +71,7 @@ function fe_challenge_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'bootstrap:ideal_two_column';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -70,6 +80,8 @@ function fe_challenge_default_page_manager_pages() {
       'left' => NULL,
       'right' => NULL,
       'bottom' => NULL,
+      'center' => NULL,
+      'sidebar' => NULL,
     ),
   );
   $display->cache = array();
@@ -81,7 +93,7 @@ function fe_challenge_default_page_manager_pages() {
   $display->panels = array();
   $pane = new stdClass();
   $pane->pid = 'new-be2d700d-5398-49e2-bb00-8eae27379658';
-  $pane->panel = 'middle';
+  $pane->panel = 'center';
   $pane->type = 'block';
   $pane->subtype = 'views-challenges_list-block_1';
   $pane->shown = TRUE;
@@ -100,7 +112,79 @@ function fe_challenge_default_page_manager_pages() {
   $pane->locks = array();
   $pane->uuid = 'be2d700d-5398-49e2-bb00-8eae27379658';
   $display->content['new-be2d700d-5398-49e2-bb00-8eae27379658'] = $pane;
-  $display->panels['middle'][0] = 'new-be2d700d-5398-49e2-bb00-8eae27379658';
+  $display->panels['center'][0] = 'new-be2d700d-5398-49e2-bb00-8eae27379658';
+  $pane = new stdClass();
+  $pane->pid = 'new-fbedfbe9-e0d8-4d80-b634-3d02b0820b24';
+  $pane->panel = 'sidebar';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Add idea',
+    'title' => '',
+    'title_heading' => 'h2',
+    'body' => '<a href="node/add/idea" class="add-idea">Add Idea</a>',
+    'format' => 'filtered_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'fbedfbe9-e0d8-4d80-b634-3d02b0820b24';
+  $display->content['new-fbedfbe9-e0d8-4d80-b634-3d02b0820b24'] = $pane;
+  $display->panels['sidebar'][0] = 'new-fbedfbe9-e0d8-4d80-b634-3d02b0820b24';
+  $pane = new stdClass();
+  $pane->pid = 'new-27cbb262-783b-438a-a5c9-0cb910ccb1f0';
+  $pane->panel = 'sidebar';
+  $pane->type = 'block';
+  $pane->subtype = 'views-f82b385d04a27538a1646ec3e53c5fef';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 1,
+    'override_title_text' => 'Featured Challenges',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = '27cbb262-783b-438a-a5c9-0cb910ccb1f0';
+  $display->content['new-27cbb262-783b-438a-a5c9-0cb910ccb1f0'] = $pane;
+  $display->panels['sidebar'][1] = 'new-27cbb262-783b-438a-a5c9-0cb910ccb1f0';
+  $pane = new stdClass();
+  $pane->pid = 'new-4c25646d-c336-4334-8940-1cf0eb38fda8';
+  $pane->panel = 'sidebar';
+  $pane->type = 'block';
+  $pane->subtype = 'views-activity-block';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = '4c25646d-c336-4334-8940-1cf0eb38fda8';
+  $display->content['new-4c25646d-c336-4334-8940-1cf0eb38fda8'] = $pane;
+  $display->panels['sidebar'][2] = 'new-4c25646d-c336-4334-8940-1cf0eb38fda8';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-be2d700d-5398-49e2-bb00-8eae27379658';
   $handler->conf['display'] = $display;

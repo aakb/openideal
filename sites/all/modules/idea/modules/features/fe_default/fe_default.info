@@ -2,7 +2,7 @@ name = fe_default
 description = Default feature for ideaL
 core = 7.x
 package = OpenideaL
-version = 7.x-4.0
+version = 7.x-4.4
 project = idea
 dependencies[] = context
 dependencies[] = ctools
@@ -15,6 +15,7 @@ dependencies[] = rules
 dependencies[] = search
 dependencies[] = strongarm
 dependencies[] = taxonomy
+datestamp = 1511777364
 features[context][] = sitewide
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
@@ -46,10 +47,3 @@ features[variable][] = watcher_notifications_templates_footer_anonymous_notify
 features[variable][] = watcher_notifications_templates_footer_confirm
 features[variable][] = watcher_notifications_templates_header
 features[variable][] = watcher_toggle_link_in_teaser
-
-; Information added by Drupal.org packaging script on 2017-11-27
-version = "7.x-4.4"
-core = "7.x"
-project = "idea"
-datestamp = "1511777364"
-

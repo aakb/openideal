@@ -138,7 +138,7 @@ function fe_idea_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 12,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -207,7 +207,7 @@ function fe_idea_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -251,7 +251,7 @@ function fe_idea_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -327,9 +327,13 @@ function fe_idea_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -384,7 +388,7 @@ function fe_idea_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -426,7 +430,7 @@ function fe_idea_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 11,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -533,7 +537,7 @@ function fe_idea_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -574,7 +578,7 @@ function fe_idea_field_default_field_instances() {
         'module' => 'social_buttons',
         'settings' => array(),
         'type' => 'social_buttons_formatter_default',
-        'weight' => 10,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',

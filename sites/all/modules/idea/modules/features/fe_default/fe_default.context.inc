@@ -32,12 +32,6 @@ function fe_default_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-10',
         ),
-        'panels_mini-footer' => array(
-          'module' => 'panels_mini',
-          'delta' => 'footer',
-          'region' => 'footer',
-          'weight' => '10',
-        ),
       ),
     ),
   );
