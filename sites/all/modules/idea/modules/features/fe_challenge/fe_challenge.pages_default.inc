@@ -121,10 +121,10 @@ function fe_challenge_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'admin_title' => 'Add idea',
+    'admin_title' => 'Add challenge',
     'title' => '',
     'title_heading' => 'h2',
-    'body' => '<a href="node/add/idea" class="add-idea">Add Idea</a>',
+    'body' => '<a href="node/add/challenge" class="add-idea">Add Challenge</a>',
     'format' => 'filtered_html',
     'substitute' => TRUE,
   );
