@@ -1,7 +1,110 @@
 /**
-*
+* ITK Styling
 */
+
+// Import roboto font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+// Itk variables
+$base-font: "Roboto", sans-serif;
+$gray-light: #f3f3f3;
+$black: #222222;
+$blue: #009AE0;
+$green: #7BBB69;
+
+// Body
+body {
+    font-family: $base-font;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $base-font;
+  font-weight: 500;
+}
+
+// Links
+a {
+  color: $blue;
+}
+
+// Import partials
+
 @import "modules/_layout";
 @import "modules/_footer";
 @import "modules/_video";
 @import "modules/_regions";
+
+// Block footers
+.row-bottom-openideal {
+  background: $gray-light;
+  color: $black;
+  font-family: $base-font;
+  line-height: 25px;
+  vertical-align: middle;
+    .author {
+      .name {
+        margin-top: 10px;
+        color: $black;
+      }
+   }
+  .date-display-range {
+    font-family: $base-font;
+  }
+}
+
+// Panel
+.panel-pane {
+  margin-bottom: 2.0em;
+  .pane-title {
+    background: $gray-light;
+    color: $black;
+    padding: 12px 15px !important;
+  }
+}
+
+// Frontpage carousel
+.pane-views-default-challenge-block .text {
+  height: auto;
+  width: 100%;
+  padding: 20px 30px 0 30px;
+  &.caption {
+    top: 0;
+    bottom: auto;
+    .title {
+      margin-top: 30px;
+    }
+  }
+}
+.pane-views-default-challenge-block .text h5 {
+  font-weight: 400;
+}
+
+// Frontpage challanges
+.pane-views-challenges-featured-front-block{
+  // Align View all link
+  .view-all {
+    margin-top: -50px;
+    margin-right: 15px;
+  }
+  .view-challenges-featured-front {
+    // Position textoverlay correct over image
+    .caption {
+      margin: 0 5px;
+    }
+  }
+  .views-field-field-challenge-image {
+    // Strech image to align with textoverlay
+    margin: 0 -10px;
+  }
+}
+
+// Add idea btn
+.pane-custom .add-idea {
+  background-color: $green;
+  &:hover {
+    background-color: darken($green, 10)
+  }
+}
