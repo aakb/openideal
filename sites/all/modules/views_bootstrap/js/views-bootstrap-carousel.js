@@ -2,6 +2,8 @@
   Drupal.behaviors.viewsBootstrapCarousel = {
     attach: function(context, settings) {
       $.each(settings.viewsBootstrap.carousel, function(id, carousel) {
+        // ITK Set timer.
+        carousel.attributes.interval = 7000;
         try {
           // Does the view have more than 1 item?
           // If not, hide the indicators and controls.

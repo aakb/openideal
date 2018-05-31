@@ -13,7 +13,7 @@ class ViewsBootstrapCarouselPluginStyle extends views_plugin_style {
    */
   public function option_definition() {
     $options = parent::option_definition();
-    $options['interval'] = array('default' => 5000);
+    $options['interval'] = array('default' => 20000);
     $options['navigation'] = array('default' => TRUE);
     $options['indicators'] = array('default' => TRUE);
     $options['pause'] = array('default' => FALSE);

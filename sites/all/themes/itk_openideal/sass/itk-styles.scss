@@ -50,7 +50,7 @@ a {
         color: $black;
       }
    }
-  .date-display-range {
+  span {
     font-family: $base-font;
   }
 }
@@ -107,4 +107,62 @@ a {
   &:hover {
     background-color: darken($green, 10)
   }
+}
+
+// View activity
+.pane-panels-mini.pane-latest-and-greatest .pane-title {
+  border-bottom: 1px solid #d5d5d5;
+  color: #222222;
+  padding: 12px 15px !important;
+  margin-bottom: 13px;
+  font-size: 30px;
+  background-color: #f3f3f3;
+}
+
+.view-activity {
+  .views-row {
+    margin: 1em 0;
+  }
+
+  .views-field-picture {
+    padding-right: 15px;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  .pull-left > div {
+    color: #ababab;
+
+    a {
+      color: $blue!important;
+    }
+  }
+
+  .view-all {
+    margin-top: -50px;
+    margin-right: 15px;
+    float: right;
+    color: black;
+  }
+}
+
+.pane-views-activity-block .pane-content .views-row + .views-row {
+  padding-top: 0;
+  margin-top: 5px;
+  border-top: 0
+}
+
+.pane-ideal-blocks-ideal-key-stats .pane-title {
+  font-size: 26px;
+}
+
+.view-challenges-list .row-bottom-openideal:before {
+  border:0;
+}
+
+.pane-ideal-challenge-challenge-data .pane-content,
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
+  padding-top: 15px;
 }
