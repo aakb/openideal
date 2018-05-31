@@ -1201,7 +1201,7 @@ function fe_pages_default_page_manager_pages() {
   $pane->panel = 'content_views';
   $pane->type = 'block';
   $pane->subtype = 'views-default_challenge-block';
-  $pane->shown = FALSE;
+  $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
     'override_title' => 0,
@@ -1223,7 +1223,7 @@ function fe_pages_default_page_manager_pages() {
   $pane->panel = 'content_views';
   $pane->type = 'block';
   $pane->subtype = 'views-challenges_featured_front-block';
-  $pane->shown = FALSE;
+  $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
     'override_title' => 0,
@@ -1317,7 +1317,9 @@ function fe_pages_default_page_manager_pages() {
     'admin_title' => 'Add idea',
     'title' => '',
     'title_heading' => 'h2',
-    'body' => '<a href="node/add/idea" class="add-idea">Add Idea</a>',
+    'body' => '<a href="node/add/idea" class="add-idea">Add Idea</a>
+<br>
+<a href="node/add/challenge" class="add-idea">Add Challenge</a>',
     'format' => 'filtered_html',
     'substitute' => TRUE,
   );
@@ -1359,28 +1361,6 @@ function fe_pages_default_page_manager_pages() {
   $display->content['new-22c22a09-d9f7-4f5c-9a0c-d17edc79e2be'] = $pane;
   $display->panels['sidebar'][2] = 'new-22c22a09-d9f7-4f5c-9a0c-d17edc79e2be';
   $pane = new stdClass();
-  $pane->pid = 'new-abf04e22-9bc4-44fc-b26a-c587159e347d';
-  $pane->panel = 'sidebar';
-  $pane->type = 'block';
-  $pane->subtype = 'views-activity-block';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'override_title' => 0,
-    'override_title_text' => '',
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 3;
-  $pane->locks = array();
-  $pane->uuid = 'abf04e22-9bc4-44fc-b26a-c587159e347d';
-  $display->content['new-abf04e22-9bc4-44fc-b26a-c587159e347d'] = $pane;
-  $display->panels['sidebar'][3] = 'new-abf04e22-9bc4-44fc-b26a-c587159e347d';
-  $pane = new stdClass();
   $pane->pid = 'new-cfe88c87-4f33-4e25-beff-094685b43633';
   $pane->panel = 'sidebar';
   $pane->type = 'block';
@@ -1397,11 +1377,33 @@ function fe_pages_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 4;
+  $pane->position = 3;
   $pane->locks = array();
   $pane->uuid = 'cfe88c87-4f33-4e25-beff-094685b43633';
   $display->content['new-cfe88c87-4f33-4e25-beff-094685b43633'] = $pane;
-  $display->panels['sidebar'][4] = 'new-cfe88c87-4f33-4e25-beff-094685b43633';
+  $display->panels['sidebar'][3] = 'new-cfe88c87-4f33-4e25-beff-094685b43633';
+  $pane = new stdClass();
+  $pane->pid = 'new-abf04e22-9bc4-44fc-b26a-c587159e347d';
+  $pane->panel = 'sidebar';
+  $pane->type = 'block';
+  $pane->subtype = 'views-activity-block';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $pane->uuid = 'abf04e22-9bc4-44fc-b26a-c587159e347d';
+  $display->content['new-abf04e22-9bc4-44fc-b26a-c587159e347d'] = $pane;
+  $display->panels['sidebar'][4] = 'new-abf04e22-9bc4-44fc-b26a-c587159e347d';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

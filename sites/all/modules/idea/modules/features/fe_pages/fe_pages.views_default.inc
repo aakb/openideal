@@ -343,7 +343,7 @@ function fe_pages_views_default_views() {
   $handler->display->display_options['fields']['field_challenge_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_challenge_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_challenge_image']['settings'] = array(
-    'image_style' => 'large',
+    'image_style' => 'slider',
     'image_link' => '',
   );
   /* Field: Content: Title */
@@ -446,9 +446,9 @@ function fe_pages_views_default_views() {
 	   <div class="picture">[picture]</div>
 	   <div class="name">[name]</div>
         </div>
-	<div class="status glyphicon glyphicon-th-list">[field_status]</div>
+	<div class="status glyphicon glyphicon-th-list"><span class="date-display-range">[field_status]</span></div>
 	<div class="dates glyphicon glyphicon-calendar">[field_dates]</div>
-	<div class="count glyphicon glyphicon-map-marker">[title_1]</div>
+	<div class="count glyphicon glyphicon-map-marker"><span class="date-display-range">[title_1]</span></div>
 </div>';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */

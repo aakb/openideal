@@ -134,9 +134,9 @@ function fe_challenge_views_default_views() {
 	   <div class="picture">[picture]</div>
 	   <div class="name">[name]</div>
         </div>
-	<div class="status glyphicon glyphicon-th-list">[field_status]</div>
-	<div class="dates glyphicon glyphicon-calendar">[field_dates]</div>
-	<div class="count glyphicon glyphicon-map-marker">[title_1]</div>
+	<div class="status glyphicon glyphicon-th-list"><span>[field_status]</span></div>
+	<div class="dates glyphicon glyphicon-calendar"><span>[field_dates]</span></div>
+	<div class="count glyphicon glyphicon-map-marker"><span>[title_1]</span></div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */

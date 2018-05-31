@@ -257,7 +257,7 @@ function fe_idea_field_default_field_bases() {
         'Under Review' => 'Under Review',
         'Reviewed' => 'Reviewed',
         'Coming Soon' => 'Coming Soon',
-        'Launched' => 'Launched',
+        'Launched' => 'Approved',
         'Next Time' => 'Next Time',
       ),
       'allowed_values_function' => '',

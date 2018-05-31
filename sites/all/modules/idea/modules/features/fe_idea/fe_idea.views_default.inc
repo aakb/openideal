@@ -785,11 +785,11 @@ Why not add an idea?';
 	   <div class="picture">[picture]</div>
 	   <div class="name">[name]</div>
         </div>
-	<div class="status glyphicon glyphicon-th-list">[field_in_action]</div>
-	<div class="dates glyphicon glyphicon-calendar">[created]</div>
-	<div class="count glyphicon glyphicon-read">[totalcount]</div>
-	<div class="count glyphicon glyphicon-comment">[comment_count]</div>
-	<div class="count glyphicon vote">[field_vote]</div>
+	<div class="status glyphicon glyphicon-th-list"><span>[field_in_action]</span></div>
+	<div class="dates glyphicon glyphicon-calendar"><span>[created]</span></div>
+	<div class="count glyphicon glyphicon-read"><span>[totalcount]</span></div>
+	<div class="count glyphicon glyphicon-comment"><span>[comment_count]</span></div>
+	<div class="count glyphicon vote"><span>[field_vote]</span></div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
