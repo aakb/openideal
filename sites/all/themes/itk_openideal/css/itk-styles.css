@@ -1,6 +1,19 @@
 /**
-*
+* ITK Styling
 */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; }
+
+a {
+  color: #009AE0; }
+
 /**
 * Define layout.
 */
@@ -61,3 +74,50 @@ body.panels-ipe footer.footer.navbar {
   padding: 0; }
   #panel-bootstrap-column-main #panel-bootstrap-row-main-row {
     border: 0; }
+
+.row-bottom-openideal {
+  background: #f3f3f3;
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  vertical-align: middle; }
+  .row-bottom-openideal .author .name {
+    margin-top: 10px;
+    color: #222222; }
+  .row-bottom-openideal .date-display-range {
+    font-family: "Roboto", sans-serif; }
+
+.panel-pane {
+  margin-bottom: 2.0em; }
+  .panel-pane .pane-title {
+    background: #f3f3f3;
+    color: #222222;
+    padding: 12px 15px !important; }
+
+.pane-views-default-challenge-block .text {
+  height: auto;
+  width: 100%;
+  padding: 20px 30px 0 30px; }
+  .pane-views-default-challenge-block .text.caption {
+    top: 0;
+    bottom: auto; }
+    .pane-views-default-challenge-block .text.caption .title {
+      margin-top: 30px; }
+
+.pane-views-default-challenge-block .text h5 {
+  font-weight: 400; }
+
+.pane-views-challenges-featured-front-block .view-all {
+  margin-top: -50px;
+  margin-right: 15px; }
+
+.pane-views-challenges-featured-front-block .view-challenges-featured-front .caption {
+  margin: 0 5px; }
+
+.pane-views-challenges-featured-front-block .views-field-field-challenge-image {
+  margin: 0 -10px; }
+
+.pane-custom .add-idea {
+  background-color: #7BBB69; }
+  .pane-custom .add-idea:hover {
+    background-color: #5fa64b; }
