@@ -118,6 +118,12 @@ body.panels-ipe footer.footer.navbar {
   margin: 0 -10px; }
 
 .pane-custom .add-idea {
-  background-color: #7BBB69; }
+  background-color: #7BBB69;
+  transition: background-color .3s ease-out; }
   .pane-custom .add-idea:hover {
+    transition: background-color .2s ease-in;
     background-color: #5fa64b; }
+
+body.admin-menu .navbar-fixed-top {
+  top: 28px;
+  border-top: 1px solid #444; }
