@@ -146,6 +146,14 @@ a {
     float: right;
     color: black;
   }
+
+  .pull-left {
+    width: 80%;
+  }
+
+  .views-field-picture.pull-left {
+    width: auto;
+  }
 }
 
 .pane-views-activity-block .pane-content .views-row + .views-row {
@@ -165,4 +173,52 @@ a {
 .pane-ideal-challenge-challenge-data .pane-content,
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
   padding-top: 15px;
+}
+
+.input-group .form-control {
+  padding: 0;
+  display: block;
+  margin-bottom: .5em;
+}
+
+.input-group .input-group-btn {
+  float: left;
+  width: 100%;
+
+  & .form-submit {
+    width: 100%;
+  }
+}
+
+.top .count {
+  padding: 20px 0 0;
+}
+
+.pane-node-field-vote .alternate-votes-display {
+  top: 30px;
+}
+
+.pane-node-field-vote .pane-content {
+  margin-top: 53px;
+}
+
+body .panels-bootstrap-inner_page .pane-node-field-challenge-ref .pane-title {
+  padding: 0!important;
+}
+
+.pane-views-ideas-in-challenge-block div.views-field-title {
+  font-size:23px;
+}
+
+.pane-views-ideas-in-challenge-block div.views-field-body {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.pagination {
+  width: 100%;
+}
+
+#ideal-key-stats a {
+  color: inherit;
 }

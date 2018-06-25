@@ -13,6 +13,7 @@ body {
   min-width: 0;
   width: 100%;
   height:100%;
+  line-height:1.6em;
 
   header#navbar {
     .panel-pane {
@@ -48,5 +49,11 @@ body {
       content: "\e604";
       margin-right: 7px;
     }
+  }
+  .view-ideas-all .views-field-body,
+  .body .panels-bootstrap-inner_page .pane-node-body,
+  .view-ideas-all .views-field-body,
+  .view-challenges-list .views-field-body {
+    line-height: 1.6em;
   }
 }

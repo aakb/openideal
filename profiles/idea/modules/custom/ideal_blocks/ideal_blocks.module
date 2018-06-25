@@ -93,11 +93,11 @@ function _ideal_blocks_challenge_stats() {
 
     // Generate output.
     $output = '<div id="ideal-challenge-stats">';
-    $output .= '<div class="row top ideas col-xs-12">' . format_plural($idea_count, '<div class="count">1<span class="name">Idea</span></div>', '<div class="count">@count<span class="name">Ideas</span></div>') . '</div>';
+    $output .= '<div class="row top ideas col-xs-12"><a href="">' . format_plural($idea_count, '<div class="count">1<span class="name">Idea</span></div>', '<div class="count">@count<span class="name">Ideas</span></a></div>') . '</div>';
     $output .= '<table class="counts"><tr>';
-    $output .= '<td class="col users"><div class="name">' . t('Users') . '</div><div class="count">' . $user_count . '</div></td>';
+    $output .= '<td class="col users"><a href=""><div class="name">' . t('Users') . '</div><div class="count">' . $user_count . '</div></a></td>';
     $output .= '<td class="col votes"><div class="name">' . t('Votes') . '</div><div class="count">' . $vote_count . '</div></td>';
-    $output .= '<td class="col comments"><div class="name">' . t('Comments') . '</div><div class="count">' . $comment_count . '</div></td>';
+    $output .= '<td class="col comments"><a href=""><div class="name">' . t('Comments') . '</div><div class="count">' . $comment_count . '</div></a></td>';
     $output .= '</tr></table></div></div>';
 
     return $output;
@@ -215,8 +215,8 @@ function _ideal_blocks_key_stats() {
   $output = '<div id="ideal-key-stats">';
   $output .= '<div class="row top challenges col-xs-12">' . format_plural($challenge_count, '<div class="count">1<span class="name">Challenge</span></div>', '<div class="count">@count<span class="name">Challenges</span></div>') . '</div>';
   $output .= '<table class="counts"><tr>';
-  $output .= '<td class="col ideas"><div class="name">' . t('Ideas') . '</div><div class="count">' . $idea_count . '</div></td>';
-  $output .= '<td class="col users"><div class="name">' . t('Users') . '</div><div class="count">' . $user_count . '</div></td>';
+  $output .= '<td class="col ideas"><div class="name">' . t('Ideas') . '</div><a href=""><div class="count">' . $idea_count . '</div></a></td>';
+  $output .= '<td class="col users"><div class="name">' . t('Users') . '</div><a href=""><div class="count">' . $user_count . '</div></a></td>';
   $output .= '<td class="col votes"><div class="name">' . t('Votes') . '</div><div class="count">' . $vote_count . '</div></td>';
   $output .= '</tr></table></div>';
 

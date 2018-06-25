@@ -26,7 +26,8 @@ body {
   margin-bottom: 0 !important;
   min-width: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  line-height: 1.6em; }
   body header#navbar .panel-pane {
     height: 55px; }
   body header#navbar .nav li a {
@@ -47,6 +48,11 @@ body {
       font-family: "OpenIdeal";
       content: "\e604";
       margin-right: 7px; }
+  body .view-ideas-all .views-field-body,
+  body .body .panels-bootstrap-inner_page .pane-node-body,
+  body .view-ideas-all .views-field-body,
+  body .view-challenges-list .views-field-body {
+    line-height: 1.6em; }
 
 /**
 * Define footer .
@@ -150,6 +156,12 @@ body.panels-ipe footer.footer.navbar {
   float: right;
   color: black; }
 
+.view-activity .pull-left {
+  width: 80%; }
+
+.view-activity .views-field-picture.pull-left {
+  width: auto; }
+
 .pane-views-activity-block .pane-content .views-row + .views-row {
   padding-top: 0;
   margin-top: 5px;
@@ -164,3 +176,39 @@ body.panels-ipe footer.footer.navbar {
 .pane-ideal-challenge-challenge-data .pane-content,
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
   padding-top: 15px; }
+
+.input-group .form-control {
+  padding: 0;
+  display: block;
+  margin-bottom: .5em; }
+
+.input-group .input-group-btn {
+  float: left;
+  width: 100%; }
+  .input-group .input-group-btn .form-submit {
+    width: 100%; }
+
+.top .count {
+  padding: 20px 0 0; }
+
+.pane-node-field-vote .alternate-votes-display {
+  top: 30px; }
+
+.pane-node-field-vote .pane-content {
+  margin-top: 53px; }
+
+body .panels-bootstrap-inner_page .pane-node-field-challenge-ref .pane-title {
+  padding: 0 !important; }
+
+.pane-views-ideas-in-challenge-block div.views-field-title {
+  font-size: 23px; }
+
+.pane-views-ideas-in-challenge-block div.views-field-body {
+  font-size: 16px;
+  line-height: 22px; }
+
+.pagination {
+  width: 100%; }
+
+#ideal-key-stats a {
+  color: inherit; }
