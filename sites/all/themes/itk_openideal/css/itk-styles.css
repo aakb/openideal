@@ -212,3 +212,7 @@ body .panels-bootstrap-inner_page .pane-node-field-challenge-ref .pane-title {
 
 #ideal-key-stats a {
   color: inherit; }
+
+.footer {
+  display: none;
+}
