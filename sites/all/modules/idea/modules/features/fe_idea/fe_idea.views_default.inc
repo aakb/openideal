@@ -707,6 +707,7 @@ Why not add an idea?';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
   $handler->display->display_options['fields']['title_1']['relationship'] = 'field_challenge_ref_target_id';
   $handler->display->display_options['fields']['title_1']['label'] = 'Challenge';
+  $handler->display->display_options['fields']['title_1']['hide_empty'] = TRUE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';

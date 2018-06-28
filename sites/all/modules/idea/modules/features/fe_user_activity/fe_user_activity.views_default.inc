@@ -43,6 +43,16 @@ function fe_user_activity_views_default_views() {
   $handler->display->display_options['relationships']['user']['id'] = 'user';
   $handler->display->display_options['relationships']['user']['table'] = 'message';
   $handler->display->display_options['relationships']['user']['field'] = 'user';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_challenge_target_id']['id'] = 'field_challenge_target_id';
+  $handler->display->display_options['relationships']['field_challenge_target_id']['table'] = 'field_data_field_challenge';
+  $handler->display->display_options['relationships']['field_challenge_target_id']['field'] = 'field_challenge_target_id';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'field_challenge_target_id';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   /* Field: Message: User uid */
   $handler->display->display_options['fields']['user']['id'] = 'user';
   $handler->display->display_options['fields']['user']['table'] = 'message';
@@ -68,14 +78,36 @@ function fe_user_activity_views_default_views() {
   $handler->display->display_options['fields']['message_render']['table'] = 'message';
   $handler->display->display_options['fields']['message_render']['field'] = 'message_render';
   $handler->display->display_options['fields']['message_render']['label'] = '';
+  $handler->display->display_options['fields']['message_render']['exclude'] = TRUE;
   $handler->display->display_options['fields']['message_render']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['message_render']['alter']['preserve_tags'] = '<h4><a><div>';
   $handler->display->display_options['fields']['message_render']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['message_render']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['message_render']['element_wrapper_class'] = 'pull-left';
   $handler->display->display_options['fields']['message_render']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['message_render']['partials'] = 0;
   $handler->display->display_options['fields']['message_render']['partials_delta'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_challenge_target_id';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = 'in the challenge <a href="/node/[nid]">[title]</a>';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div>[message_render] [title]</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'pull-left';
   /* Sort criterion: Message: Timestamp */
   $handler->display->display_options['sorts']['timestamp']['id'] = 'timestamp';
   $handler->display->display_options['sorts']['timestamp']['table'] = 'message';

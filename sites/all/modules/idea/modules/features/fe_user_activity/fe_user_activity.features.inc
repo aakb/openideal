@@ -86,9 +86,9 @@ function fe_user_activity_default_message_type() {
     "arguments" : null,
     "message_text" : { "und" : [
         {
-          "value" : "\\u003Ch4\\u003E\\u003Ca href=\\u0022[message:field-posted-idea:url]\\u0022\\u003E[message:field-posted-idea:title]\\u003C\\/a\\u003E\\u003C\\/h4\\u003E\\u003Cdiv\\u003Ewas posted by \\u003Ca href=\\u0022[message:user:url]\\u0022\\u003E[message:user:name]\\u003C\\/a\\u003E in the challenge \\u003Ca href=\\u0022[message:field-challenge:url]\\u0022\\u003E[message:field-challenge:title]\\u003C\\/a\\u003E\\u003C\\/div\\u003E",
+          "value" : "\\u003Ch4\\u003E\\u003Ca href=\\u0022[message:field-posted-idea:url]\\u0022\\u003E[message:field-posted-idea:title]\\u003C\\/a\\u003E\\u003C\\/h4\\u003Ewas posted by \\u003Ca href=\\u0022[message:user:url]\\u0022\\u003E[message:user:name]\\u003C\\/a\\u003E",
           "format" : "full_html",
-          "safe_value" : "\\u003Ch4\\u003E\\u003Ca href=\\u0022[message:field-posted-idea:url]\\u0022\\u003E[message:field-posted-idea:title]\\u003C\\/a\\u003E\\u003C\\/h4\\u003E\\n\\u003Cdiv\\u003Ewas posted by \\u003Ca href=\\u0022[message:user:url]\\u0022\\u003E[message:user:name]\\u003C\\/a\\u003E in the challenge \\u003Ca href=\\u0022[message:field-challenge:url]\\u0022\\u003E[message:field-challenge:title]\\u003C\\/a\\u003E\\u003C\\/div\\u003E\\n"
+          "safe_value" : "\\u003Ch4\\u003E\\u003Ca href=\\u0022[message:field-posted-idea:url]\\u0022\\u003E[message:field-posted-idea:title]\\u003C\\/a\\u003E\\u003C\\/h4\\u003E\\n\\u003Cp\\u003Ewas posted by \\u003Ca href=\\u0022[message:user:url]\\u0022\\u003E[message:user:name]\\u003C\\/a\\u003E\\u003C\\/p\\u003E\\n"
         }
       ]
     },
