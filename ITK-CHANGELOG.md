@@ -8,4 +8,4 @@ ITKIdeas changelog (Openideal install profile)
  File Field Sources (filefield_sources)     7.x-1.10           7.x-1.11          SECURITY UPDATE available
  HTML Mail (htmlmail)                       7.x-2.65           7.x-2.71          SECURITY UPDATE available
  Search Autocomplete (search_autocomplete)  7.x-4.7            7.x-4.9           SECURITY UPDATE available
- ```dcd 
+ ```
