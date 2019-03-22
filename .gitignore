@@ -7,3 +7,7 @@ sites/*/private
 
 # Ignore node
 sites/**/node_modules
+
+# Ignore pull script and remote env
+.env-remote
+.pull-prod
