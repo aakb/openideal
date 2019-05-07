@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="408" height="408" viewBox="0 0 408 408">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#FEE13D" points="175 175 368 175 269.745 368 175 368" transform="rotate(-135 271.5 271.5)"/>
+    <polygon fill="#008850" points="175 40 368 136.666 368 233 175 233" transform="rotate(-135 271.5 136.5)"/>
+    <polygon fill="#3661D8" points="137.304 40 233 40 233 233 40 233" transform="rotate(-135 136.5 136.5)"/>
+    <polygon fill="#D32F2F" points="40 175 233 175 233 368 40 272.696" transform="rotate(-135 136.5 271.5)"/>
+    <polygon fill="#FEE13D" points="134.849 272.458 250.81 271.937 226.744 319.458" transform="rotate(-135 192.83 295.698)"/>
+    <polygon fill="#333" fill-opacity=".5" points="272.97 136.5 231 149.719 271.5 272.97"/>
+    <polygon fill="#333" fill-opacity=".5" points="224.792 88.401 183.038 102.993 225.703 224.876" transform="rotate(-89 204.37 156.639)"/>
+    <polygon fill="#333" fill-opacity=".5" points="178.055 135.401 135.304 150.168 178.97 272.034" transform="rotate(-179 157.137 203.717)"/>
+    <polygon fill="#333" fill-opacity=".5" points="224.05 183.124 182.297 197.639 224.962 319.599" transform="rotate(91 203.63 251.361)"/>
+  </g>
+</svg>

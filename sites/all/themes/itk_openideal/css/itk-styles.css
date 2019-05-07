@@ -1,0 +1,218 @@
+/**
+* ITK Styling
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; }
+
+a {
+  color: #009AE0; }
+
+/**
+* Define layout.
+*/
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0 !important;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1.6em; }
+  body header#navbar .panel-pane {
+    height: 55px; }
+  body header#navbar .nav li a {
+    height: 55px;
+    line-height: 25px; }
+  body header#navbar .pane-search-form {
+    padding: 5px 0 0 15px; }
+  body .main-container.container {
+    flex: 1 1 auto; }
+  body footer {
+    flex: 1 1 auto; }
+  body .panels-bootstrap-inner_page .pane-node-field-in-action {
+    float: right;
+    margin-top: -52px;
+    margin-right: 100px;
+    font-size: 13px; }
+    body .panels-bootstrap-inner_page .pane-node-field-in-action .field-item:before {
+      font-family: "OpenIdeal";
+      content: "\e604";
+      margin-right: 7px; }
+  body .view-ideas-all .views-field-body,
+  body .body .panels-bootstrap-inner_page .pane-node-body,
+  body .view-ideas-all .views-field-body,
+  body .view-challenges-list .views-field-body {
+    line-height: 1.6em; }
+
+/**
+* Define footer .
+*/
+footer.footer.navbar,
+body.panels-ipe footer.footer.navbar {
+  bottom: 0;
+  position: relative; }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden; }
+
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#panel-bootstrap-column-main {
+  padding: 0; }
+  #panel-bootstrap-column-main #panel-bootstrap-row-main-row {
+    border: 0; }
+
+.row-bottom-openideal {
+  background: #f3f3f3;
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  vertical-align: middle; }
+  .row-bottom-openideal .author .name {
+    margin-top: 10px;
+    color: #222222; }
+  .row-bottom-openideal span {
+    font-family: "Roboto", sans-serif; }
+
+.panel-pane {
+  margin-bottom: 2.0em; }
+  .panel-pane .pane-title {
+    background: #f3f3f3;
+    color: #222222;
+    padding: 12px 15px !important; }
+
+.pane-views-default-challenge-block .text {
+  height: auto;
+  width: 100%;
+  padding: 20px 30px 0 30px; }
+  .pane-views-default-challenge-block .text.caption {
+    top: 0;
+    bottom: auto; }
+    .pane-views-default-challenge-block .text.caption .title {
+      margin-top: 30px; }
+
+.pane-views-default-challenge-block .text h5 {
+  font-weight: 400; }
+
+.pane-views-challenges-featured-front-block .view-all {
+  margin-top: -50px;
+  margin-right: 15px; }
+
+.pane-views-challenges-featured-front-block .view-challenges-featured-front .caption {
+  margin: 0 5px; }
+
+.pane-views-challenges-featured-front-block .views-field-field-challenge-image {
+  margin: 0 -10px; }
+
+.pane-custom .add-idea {
+  background-color: #7BBB69; }
+  .pane-custom .add-idea:hover {
+    background-color: #5fa64b; }
+
+.pane-panels-mini.pane-latest-and-greatest .pane-title {
+  border-bottom: 1px solid #d5d5d5;
+  color: #222222;
+  padding: 12px 15px !important;
+  margin-bottom: 13px;
+  font-size: 30px;
+  background-color: #f3f3f3; }
+
+.view-activity .views-row {
+  margin: 1em 0; }
+
+.view-activity .views-field-picture {
+  padding-right: 15px; }
+
+.view-activity h4 {
+  margin-top: 0; }
+
+.view-activity .pull-left > div {
+  color: #ababab; }
+  .view-activity .pull-left > div a {
+    color: #009AE0 !important; }
+
+.view-activity .view-all {
+  margin-top: -50px;
+  margin-right: 15px;
+  float: right;
+  color: black; }
+
+.view-activity .pull-left {
+  width: 80%; }
+
+.view-activity .views-field-picture.pull-left {
+  width: auto; }
+
+.pane-views-activity-block .pane-content .views-row + .views-row {
+  padding-top: 0;
+  margin-top: 5px;
+  border-top: 0; }
+
+.pane-ideal-blocks-ideal-key-stats .pane-title {
+  font-size: 26px; }
+
+.view-challenges-list .row-bottom-openideal:before {
+  border: 0; }
+
+.pane-ideal-challenge-challenge-data .pane-content,
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
+  padding-top: 15px; }
+
+.input-group .form-control {
+  padding: 0;
+  display: block;
+  margin-bottom: .5em; }
+
+.input-group .input-group-btn {
+  float: left;
+  width: 100%; }
+  .input-group .input-group-btn .form-submit {
+    width: 100%; }
+
+.top .count {
+  padding: 20px 0 0; }
+
+.pane-node-field-vote .alternate-votes-display {
+  top: 30px; }
+
+.pane-node-field-vote .pane-content {
+  margin-top: 53px; }
+
+body .panels-bootstrap-inner_page .pane-node-field-challenge-ref .pane-title {
+  padding: 0 !important; }
+
+.pane-views-ideas-in-challenge-block div.views-field-title {
+  font-size: 23px; }
+
+.pane-views-ideas-in-challenge-block div.views-field-body {
+  font-size: 16px;
+  line-height: 22px; }
+
+.pagination {
+  width: 100%; }
+
+#ideal-key-stats a {
+  color: inherit; }
+
+.footer {
+  display: none;
+}

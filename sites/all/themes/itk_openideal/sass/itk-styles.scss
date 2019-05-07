@@ -1,0 +1,224 @@
+/**
+* ITK Styling
+*/
+
+// Import roboto font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+// Itk variables
+$base-font: "Roboto", sans-serif;
+$gray-light: #f3f3f3;
+$black: #222222;
+$blue: #009AE0;
+$green: #7BBB69;
+
+// Body
+body {
+    font-family: $base-font;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $base-font;
+  font-weight: 500;
+}
+
+// Links
+a {
+  color: $blue;
+}
+
+// Import partials
+
+@import "modules/_layout";
+@import "modules/_footer";
+@import "modules/_video";
+@import "modules/_regions";
+
+// Block footers
+.row-bottom-openideal {
+  background: $gray-light;
+  color: $black;
+  font-family: $base-font;
+  line-height: 25px;
+  vertical-align: middle;
+    .author {
+      .name {
+        margin-top: 10px;
+        color: $black;
+      }
+   }
+  span {
+    font-family: $base-font;
+  }
+}
+
+// Panel
+.panel-pane {
+  margin-bottom: 2.0em;
+  .pane-title {
+    background: $gray-light;
+    color: $black;
+    padding: 12px 15px !important;
+  }
+}
+
+// Frontpage carousel
+.pane-views-default-challenge-block .text {
+  height: auto;
+  width: 100%;
+  padding: 20px 30px 0 30px;
+  &.caption {
+    top: 0;
+    bottom: auto;
+    .title {
+      margin-top: 30px;
+    }
+  }
+}
+.pane-views-default-challenge-block .text h5 {
+  font-weight: 400;
+}
+
+// Frontpage challanges
+.pane-views-challenges-featured-front-block{
+  // Align View all link
+  .view-all {
+    margin-top: -50px;
+    margin-right: 15px;
+  }
+  .view-challenges-featured-front {
+    // Position textoverlay correct over image
+    .caption {
+      margin: 0 5px;
+    }
+  }
+  .views-field-field-challenge-image {
+    // Strech image to align with textoverlay
+    margin: 0 -10px;
+  }
+}
+
+// Add idea btn
+.pane-custom .add-idea {
+  background-color: $green;
+  &:hover {
+    background-color: darken($green, 10)
+  }
+}
+
+// View activity
+.pane-panels-mini.pane-latest-and-greatest .pane-title {
+  border-bottom: 1px solid #d5d5d5;
+  color: #222222;
+  padding: 12px 15px !important;
+  margin-bottom: 13px;
+  font-size: 30px;
+  background-color: #f3f3f3;
+}
+
+.view-activity {
+  .views-row {
+    margin: 1em 0;
+  }
+
+  .views-field-picture {
+    padding-right: 15px;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  .pull-left > div {
+    color: #ababab;
+
+    a {
+      color: $blue!important;
+    }
+  }
+
+  .view-all {
+    margin-top: -50px;
+    margin-right: 15px;
+    float: right;
+    color: black;
+  }
+
+  .pull-left {
+    width: 80%;
+  }
+
+  .views-field-picture.pull-left {
+    width: auto;
+  }
+}
+
+.pane-views-activity-block .pane-content .views-row + .views-row {
+  padding-top: 0;
+  margin-top: 5px;
+  border-top: 0
+}
+
+.pane-ideal-blocks-ideal-key-stats .pane-title {
+  font-size: 26px;
+}
+
+.view-challenges-list .row-bottom-openideal:before {
+  border:0;
+}
+
+.pane-ideal-challenge-challenge-data .pane-content,
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
+  padding-top: 15px;
+}
+
+.input-group .form-control {
+  padding: 0;
+  display: block;
+  margin-bottom: .5em;
+}
+
+.input-group .input-group-btn {
+  float: left;
+  width: 100%;
+
+  & .form-submit {
+    width: 100%;
+  }
+}
+
+.top .count {
+  padding: 20px 0 0;
+}
+
+.pane-node-field-vote .alternate-votes-display {
+  top: 30px;
+}
+
+.pane-node-field-vote .pane-content {
+  margin-top: 53px;
+}
+
+body .panels-bootstrap-inner_page .pane-node-field-challenge-ref .pane-title {
+  padding: 0!important;
+}
+
+.pane-views-ideas-in-challenge-block div.views-field-title {
+  font-size:23px;
+}
+
+.pane-views-ideas-in-challenge-block div.views-field-body {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.pagination {
+  width: 100%;
+}
+
+#ideal-key-stats a {
+  color: inherit;
+}
