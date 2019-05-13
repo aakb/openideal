@@ -3,6 +3,7 @@ ITKIdeas changelog (Openideal install profile)
 # 1.0.2
 * Updated core and contrib modules:
 ```
+Bootstrap (Theme)
 Context
 Drupal core 7.67
 Module Filter
