@@ -1,6 +1,6 @@
 ITKIdeas changelog (Openideal install profile)
 
-# 1.0.0
+# 1.0.2
 * Updated core and contrib modules:
 ```
 Context
