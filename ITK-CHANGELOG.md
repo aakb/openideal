@@ -1,5 +1,13 @@
 ITKIdeas changelog (Openideal install profile)
 
+# 1.0.2
+* Updated core and contrib modules:
+```
+Context
+Drupal core 7.67
+Module Filter
+Views
+ ```
 # 1.0.0
 * Updated core and contrib modules:
 ```
